@@ -1,0 +1,82 @@
+<?xml version= "1.0" encoding= "utf-8" ?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/activity_main_pb_timer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/disabled_ring"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/orange_ring"
+        android:rotation="-90"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/activity_main_iv_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_main_tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
+        android:text="@string/default_work_time"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="#DE004ba0"
+        android:textSize="80sp"
+        android:typeface="sans"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_pb_timer"
+        app:layout_constraintEnd_toEndOf="@+id/activity_main_pb_timer"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_pb_timer"
+        app:layout_constraintTop_toTopOf="@+id/activity_main_pb_timer" />
+
+    <ImageView
+        android:id="@+id/activity_main_iv_stop"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/btn_stop"
+        app:tint="@color/orange_500"
+        android:contentDescription="@string/stop_text" />
+
+    <ImageView
+        android:id="@+id/activity_main_iv_pause"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/btn_pause"
+        app:tint="@color/orange_500"
+        android:contentDescription="@string/pause_text"
+        android:clickable="false"/>
+
+    <ImageView
+        android:id="@+id/activity_main_iv_start"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/activity_main_iv_pause"
+        app:layout_constraintStart_toEndOf="@+id/activity_main_iv_stop"
+        app:srcCompat="@drawable/btn_start"
+        app:tint="@color/orange_500"
+        android:contentDescription="@string/start_button"
+        android:clickable="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

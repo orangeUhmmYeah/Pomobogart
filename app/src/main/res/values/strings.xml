@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pomobogart</string>
+    <string name="indicator">00:00</string>
+    <string name="start_long_break">start long break</string>
+    <string name="start">start</string>
+    <string name="pause">pause</string>
+    <string name="default_work_time">25:00</string>
+    <string name="work_timer_display_text">Timer starts in 25 minutes</string>
+    <string name="stop_text">Stop Button</string>
+    <string name="pause_text">pause button</string>
+    <string name="start_button">start button</string>
+    <string name="work_title">Time is Ticking! Lets do some work</string>
+    <string name="after_work_message">Good job! Now take some rest</string>
+    <string name="break_title">Enjoy your break!</string>
+    <string name="after_break_message">Break is over! Let\'s do some working</string>
+</resources>
